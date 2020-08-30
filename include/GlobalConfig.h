@@ -20,7 +20,7 @@
 
 /* Clock configuration */
 #define HSE_FREQ         8000000    ///< MCU input oscillator frequency
-#define SYSCLK_FREQ      96000000   ///< Core MCU system frequency
+#define SYSCLK_FREQ      72000000   ///< Core MCU system frequency
 
 
 /*----------------------------- FreeRTOS Config ------------------------------*/
