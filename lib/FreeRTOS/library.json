@@ -1,0 +1,16 @@
+{
+    "name" : "FreeRTOS",
+    "version" : "1.0.0",
+    "build" : {
+        "srcFilter" : [
+            "+<FreeRTOS-Kernel/>",
+            "-<FreeRTOS-Kernel/portable/>",
+            "+<FreeRTOS-Kernel/portable/GCC/ARM_CM3>"
+        ],
+        "flags" : [
+            "-IFreeRTOS-Kernel/include",
+            "-IFreeRTOS-Kernel/portable/GCC/ARM_CM3",
+            "-I../../include"
+        ]
+    }
+}
