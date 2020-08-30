@@ -24,7 +24,7 @@
 #define configTICK_RATE_HZ          ( ( TickType_t ) 1000 )
 #define configMAX_PRIORITIES        ( FREERTOS_PRIORITIES )
 #define configMINIMAL_STACK_SIZE    ( ( unsigned short ) 128 )
-#define configTOTAL_HEAP_SIZE       ( ( size_t ) ( 34 * 1024 ) )
+#define configTOTAL_HEAP_SIZE       ( ( size_t ) ( 17 * 1024 ) )
 #define configMAX_TASK_NAME_LEN                  ( 16 )
 #define configUSE_TRACE_FACILITY                 1
 #define configUSE_16_BIT_TICKS                   0
@@ -83,11 +83,5 @@ NVIC value of 255. */
 #define vPortSVCHandler sv_call_handler
 #define xPortPendSVHandler pend_sv_handler
 #define xPortSysTickHandler sys_tick_handler
-
-
-/*------------------------------- lwIP Config --------------------------------*/
-
-
-/*----------------------------------------------------------------------------*/
 
 #endif /* __FREERTOS_CONFIG__ */

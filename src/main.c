@@ -42,7 +42,7 @@ extern void vApplicationStackOverflowHook(xTaskHandle *pxTask,
                                           signed portCHAR *pcTaskName);
 
 void vApplicationStackOverflowHook(xTaskHandle *pxTask __attribute((unused)),
-                            signed portCHAR *pcTaskName __attribute((unused))) {
+                            signed portCHAR *pcTaskName __attribute((unused))) {          
     for(;;);    // Loop forever here..
 }
 
@@ -53,7 +53,7 @@ void startBlink(void *args __attribute((unused))) {
 
     for (;;) {
         gpio_toggle(GPIOC, GPIO13);
-        vTaskDelay(100);
+        vTaskDelay(250);
 	}
 }
 
@@ -67,7 +67,7 @@ int main(void) {
     hardwareInitialise();
 
     /* Create FreeRTOS Objects: */
-    xTaskCreate(startBlink, "Blink", 350, NULL, 5, NULL);
+    xTaskCreate(startBlink, "Blink", 100, NULL, 5, NULL);
 
     /* Start Scheduler: */
     vTaskStartScheduler();

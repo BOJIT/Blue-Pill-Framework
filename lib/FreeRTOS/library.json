@@ -12,9 +12,10 @@
             "-IFreeRTOS-Kernel/include",
             "-IFreeRTOS-Kernel/portable/GCC/ARM_CM3",
             "-I../../include",
+            "-Os",
+            "-fno-common",
             "-ffunction-sections",
             "-fdata-sections"
-        ],
-        "libArchive": false
+        ]
     }
 }
