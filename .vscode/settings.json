@@ -1,0 +1,10 @@
+{
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [ 80 ],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "files.insertFinalNewline": true,
+    "git.enabled": false,
+    "git.path": null,
+    "git.autofetch": false
+}
